@@ -3517,6 +3517,11 @@ only screen and (min-width: 768px) and (max-width: 991px),
     position: relative;
 }
 
+.tpcategory__icon .fn__svg {
+    width: 80px !important;
+    height: 80px !important;
+}
+
 @media (max-width: 767px) {
     .tpcategory__icon {
         height: 110px;
@@ -3905,7 +3910,9 @@ only screen and (min-width: 768px) and (max-width: 991px),
 
 .tpproduct__thumb img {
     border-radius: 6px;
-    width: 100%;
+    width:250px;
+    object-fit: cover;
+    height: 150px;
 }
 
 .tpproduct__thumb-icon {
@@ -5821,7 +5828,7 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
     right: -19px;
     height: 15px;
     width: 2px;
-    background: #ececec;
+    background: #2605b5;
     transform: translateY(-50%);
 }
 
@@ -5836,7 +5843,7 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 }
 
 .blogitem__content ul li a {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 400;
     color: var(--tp-text-body);
 }
@@ -7573,9 +7580,22 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 /*----------------------------------------*/
 /*  18. SELECTPRODUCT CSS START
 /*----------------------------------------*/
+
+.tpselectproduct_head{
+    position: relative;
+    left: 5svw;
+    /* display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items:center;
+    margin-right:15px !important;
+    margin-left: 15px; */
+}
+
 .tpselectproduct__heading {
     font-size: 20px;
     font-weight: 600;
+    width: 200px !important;
 }
 
 .tpselectproduct__thumb {
@@ -7618,6 +7638,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
     font-size: 16px;
     font-weight: 600;
     color: var(--tp-text-body);
+    width: 150px !important;
 }
 
 /*----------------------------------------*/
